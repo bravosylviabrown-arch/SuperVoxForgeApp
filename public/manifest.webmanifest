@@ -1,0 +1,27 @@
+{
+  "name": "SuperVoxForge — Studio de clonage & synthèse vocale",
+  "short_name": "SuperVoxForge",
+  "description": "Clonez, synthétisez, traduisez, convertissez et améliorez des voix — local-first, gratuit, illimité.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0A0E15",
+  "theme_color": "#0A0E15",
+  "categories": ["productivity", "music", "utilities"],
+  "icons": [
+    {
+      "src": "https://image.qwenlm.ai/generated-images/ce7007fd-e39e-4524-9bfd-a0b443cbe2c5/_result.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://image.qwenlm.ai/generated-images/ce7007fd-e39e-4524-9bfd-a0b443cbe2c5/_result.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>SuperVoxForge — Studio de clonage & synthèse vocale</title>
+    <meta name="description" content="SuperVoxForge : clonez une voix, synthétisez, traduisez, convertissez et améliorez vos voix — 100% dans votre navigateur, local-first, gratuit et illimité." />
+    <meta name="theme-color" content="#0A0E15" />
+    <link rel="icon" type="image/png" href="https://image.qwenlm.ai/generated-images/ce7007fd-e39e-4524-9bfd-a0b443cbe2c5/_result.png" />
+    <link rel="apple-touch-icon" href="https://image.qwenlm.ai/generated-images/ce7007fd-e39e-4524-9bfd-a0b443cbe2c5/_result.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800;900&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      html, body, #root { margin: 0; padding: 0; min-height: 100%; background: #0a0e15; }
+      html[data-theme="light"], html[data-theme="light"] body { background: #edf0f6; }
+    </style>
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("svf-theme") || "dark";
+          document.documentElement.setAttribute("data-theme", t);
+          if (localStorage.getItem("svf-reduce-motion") === "1") document.documentElement.setAttribute("data-reduce-motion", "1");
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
